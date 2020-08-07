@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": ["airbnb", "airbnb/hooks", "plugin:jsx-a11y/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11
+    // "sourceType": "module"
+  },
+  "plugins": ["jsx-a11y", "prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "linebreak-style": 0,
+    "allowImportExportEverywhere": 0,
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": [1, {
+      "html": "enforce",
+      "custom": "ignore"
+    }]
+  },
+  "overrides": [{
+    "files": [
+      "**/*.spec.js",
+      "**/*.spec.jsx"
+    ],
+    "env": {
+      "jest": true
+    }
+  }]
+}

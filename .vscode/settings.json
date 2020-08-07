@@ -1,0 +1,19 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "prettier.disableLanguages": [
+        "js"
+    ],
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.endOfLine": "auto",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+}
