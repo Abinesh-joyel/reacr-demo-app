@@ -8,9 +8,9 @@ const PostList = ({ title, body }) => (
   </div>
 );
 
-PostList.propTypes = {
-  title: PropTypes.string.isRequired,
-  body: PropTypes.string.isRequired,
-};
+// PostList.propTypes = {
+//   title: PropTypes.string.isRequired,
+//   body: PropTypes.string.isRequired,
+// };
 
 export default PostList;

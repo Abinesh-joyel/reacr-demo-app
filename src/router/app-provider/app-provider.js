@@ -4,6 +4,7 @@ import { Loading } from '../../modules/shared/components';
 
 const PostAdd = lazy(() => import('../../modules/post/post-add/post-add'));
 const PostHome = lazy(() => import('../../modules/post/post-home/post-home'));
+const PostDetails = lazy(() => import('../../modules/post/post-details/post-details'));
 
 const AppProvider = () => (
   <Router>
@@ -12,6 +13,7 @@ const AppProvider = () => (
         <Switch>
           <Route exact path="/" component={PostHome} />
           <Route path="/add" component={PostAdd} />
+          <Route path="/details" component={PostDetails} />
         </Switch>
       </Suspense>
     </main>
